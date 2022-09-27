@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../logo.svg";
 
 import Start from "./Start";
 import "./css/App.css";
@@ -10,7 +9,12 @@ function App() {
         <>
             <BrowserRouter>
                 <Routes>
-                  <Route path="/" element={<Start />} />
+                    <Route path="/" element={<Start />} />
+                    {/* <Route path="/about" element={<About />} />
+                    <Route path="/work" element={<Work />} />
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/cv" element={<CV />} /> */}
                 </Routes>
             </BrowserRouter>
         </>

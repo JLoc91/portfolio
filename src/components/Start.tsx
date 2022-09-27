@@ -4,7 +4,7 @@ import Body from "./Body";
 
 function Start() {
     return (
-        <div className="app-body">
+        <div className="start-body">
             <Header />
             <Body />
         </div>
