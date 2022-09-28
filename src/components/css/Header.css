@@ -1,4 +1,9 @@
-.header {
+html {
+    /* needed so that anchor-tags are not overlapped by header */
+    scroll-padding-top: 10vh; 
+}
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -15,7 +20,7 @@
     width: 100%;
 }
 
-.App-header {
+.app-header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -24,6 +29,5 @@
 }
 
 .app-body {
-    margin-top: 5vh;
+    margin-top: 10vh;
 }
-
