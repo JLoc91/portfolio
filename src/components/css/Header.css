@@ -1,6 +1,6 @@
 html {
     /* needed so that anchor-tags are not overlapped by header */
-    scroll-padding-top: 10vh; 
+    scroll-padding-top: 10vh;
 }
 
 header {
@@ -17,6 +17,7 @@ header {
     color: white;
     position: fixed;
     height: 10vh;
+    min-height: 35px;
     width: 100%;
 }
 
@@ -30,4 +31,23 @@ header {
 
 .app-body {
     margin-top: 10vh;
+    background-color: darkgray;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+}
+
+.profileLogo {
+    width: 4vh;
+    height: 4vh;
 }

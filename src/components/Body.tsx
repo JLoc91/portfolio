@@ -1,9 +1,8 @@
 import React from "react";
 import About from "./About";
-import Work from "./Work";
+import Work from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
-import CV from "./CV";
 
 function Body() {
     return (
@@ -12,7 +11,6 @@ function Body() {
             <Work />
             <Skills />
             <Contact />
-            <CV />
         </div>
     );
 }

@@ -40,3 +40,12 @@
         transform: rotate(360deg);
     }
 }
+
+.stackLogo {
+    width: 5vh;
+}
+
+.projectGif {
+    width: 10vh;
+    height: 10vh;
+}
