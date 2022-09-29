@@ -1,13 +1,50 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
-function About() {
+export function About() {
+    const { ref, inView } = useInView({ threshold: 0.2 });
+
+    const animation = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            animation.start({
+                opacity: 1,
+                transition: {
+                    delay: 0.1,
+                    duration: 0.5,
+                },
+            });
+        }
+        if (!inView) {
+            animation.start({
+                opacity: 0,
+            });
+        }
+    }, [inView]);
+
     return (
-        <div id="about">
-            <div className="placeHolder">
-                <h1>About</h1>
-            </div>
+        <div id="about" className="sectionBox">
+            <motion.div animate={animation} ref={ref} className="wrapper">
+                <h3 className="about__title">Background</h3>
+
+                <p>
+                    I am{" "}
+                    <span className="thickText">
+                        Junior Full Stack Developer
+                    </span>
+                    {""}with an engineering and sales background. After working
+                    in the additive manufacturing (3D-printing) industry, I
+                    decided to deepen my programming skills from my studies in a
+                    12-week full-stack web development bootcamp at SPICED
+                    Academy. There I developed a passion for JavaScript, Node.js
+                    and React in particular, but am always interested in
+                    learning new technologies.
+                </p>
+            </motion.div>
         </div>
     );
 }
 
-export default About;

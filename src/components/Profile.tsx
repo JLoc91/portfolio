@@ -1,6 +1,6 @@
 import React from "react";
 
-function Profile() {
+export function Profile() {
     return (
         <div id="profile">
             <h1>Julien</h1>
@@ -36,5 +36,3 @@ function Profile() {
         </div>
     );
 }
-
-export default Profile;

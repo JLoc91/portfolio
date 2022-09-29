@@ -1,7 +1,8 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "./css/Header.css";
-import Profile from "./Profile"
+import { Profile } from "./Components";
+
 
 
 function Header() {

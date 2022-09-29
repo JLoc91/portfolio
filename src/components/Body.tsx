@@ -1,14 +1,12 @@
 import React from "react";
-import About from "./About";
-import Work from "./Projects";
-import Skills from "./Skills";
-import Contact from "./Contact";
+import { Welcome, About, Projects, Skills, Contact } from "./Components";
 
 function Body() {
     return (
         <div className="app-body">
+            <Welcome />
             <About />
-            <Work />
+            <Projects />
             <Skills />
             <Contact />
         </div>

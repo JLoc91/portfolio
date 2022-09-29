@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", sans-serif;
+    /* font-size: 1rem; */
 }
 
 #start {
@@ -20,6 +24,58 @@
 
 .placeHolder {
     height: 40vh;
+}
+
+.sectionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.projectsContainer {
+    display: flex;
+
+}
+
+.projectBox {
+border-radius: .75rem;
+padding: 1.25rem;
+width: 400px;
+background: rgb(68, 67, 67)
+}
+
+.imageBox {
+    height: 230px;
+    position: relative;
+    width: 100%;
+}
+
+.projectGif {
+border-radius: .5rem;
+height: 100%;
+object-fit: cover;
+width: 100%;
+}
+
+.projectText {
+    flex-direction: column;
+    padding: .5rem;
+    position: relative;
+    width: 100%;
+}
+
+.projectText h4 {
+    line-height: 1.5rem;
+margin-top: 2rem;
+font-weight: 900;
+  max-width: 600px;
+}
+
+.projectText p {
+    align-self: flex-start;
+    font-weight: 500;
+    margin: 2rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -45,7 +101,3 @@
     width: 5vh;
 }
 
-.projectGif {
-    width: 10vh;
-    height: 10vh;
-}
