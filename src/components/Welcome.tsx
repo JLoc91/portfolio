@@ -26,7 +26,7 @@ export function Welcome() {
             >
                 Welcome!
             </motion.h1>
-
+            <br></br>
             <motion.h2
                 initial="hidden"
                 animate="visible"

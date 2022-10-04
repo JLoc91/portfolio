@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
+    color: white
     /* font-size: 1rem; */
 }
 
@@ -13,8 +14,14 @@
     flex-direction: column;
 }
 
+/* .app-body {
+    background-image: url("/public/background1.jpg");
+    background-size: contain;
+} */
+
 .App {
     text-align: center;
+    
 }
 
 .App-logo {
@@ -42,7 +49,8 @@
 border-radius: .75rem;
 padding: 1.25rem;
 width: 400px;
-background: rgb(68, 67, 67)
+background: rgb(68, 67, 67);
+box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.726);
 }
 
 .imageBox {
@@ -59,7 +67,9 @@ width: 100%;
 }
 
 .projectText {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     padding: .5rem;
     position: relative;
     width: 100%;
@@ -76,6 +86,38 @@ font-weight: 900;
     align-self: flex-start;
     font-weight: 500;
     margin: 2rem;
+}
+
+.skillWrapper, .topSkill, .bottomSkill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.topSkill ul, .bottomSkill ul {
+    width: 13vw;
+}
+
+.skillBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#intro, #projects, #contact {
+    background-color: rgb(53, 77, 54);
+}
+#about, #skills{
+    background-color: rgb(71, 104, 72);
+}
+
+li {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 1vw;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -98,6 +140,14 @@ font-weight: 900;
 }
 
 .stackLogo {
-    width: 5vh;
+    width: 3vh;
 }
 
+#intro, #about, #projects, #skills, #contact {
+    height: 90vh;
+}
+
+#intro h2 {
+    height: 30vh;
+    width: 40vw;
+}
