@@ -27,7 +27,7 @@ export function Profile() {
                 />
             </a>
             <a
-                href="./Julien_Faist_CV4.pdf"
+                href="./CV_Julien_Faist.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
             >
