@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"); */
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Open Sans", sans-serif;
-    color: white
+    color: white;
     /* font-size: 1rem; */
 }
 
@@ -21,7 +21,6 @@
 
 .App {
     text-align: center;
-    
 }
 
 .App-logo {
@@ -45,17 +44,26 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-
 }
 
 .projectBox {
-border-radius: .75rem;
-padding: 1.25rem;
-width: 200px;
-background: rgb(68, 67, 67);
-box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.726);
-flex-basis: 45%;
-margin-bottom: 3vh;
+    border-radius: 0.75rem;
+    padding: 1.25rem;
+    width: 200px;
+    background: rgb(68, 67, 67);
+    flex-basis: 45%;
+    margin-bottom: 3vh;
+}
+
+.shadow{
+    box-shadow: 4px 10px 5px rgba(0, 0, 0, 0.726);
+
+}
+
+.projectBox:hover,
+.contactWrapper:hover {
+    animation: pulse;
+    animation-duration: 2s;
 }
 
 .imageBox {
@@ -65,26 +73,26 @@ margin-bottom: 3vh;
 }
 
 .projectGif {
-border-radius: .5rem;
-height: 100%;
-object-fit: cover;
-width: 100%;
+    border-radius: 0.5rem;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
 }
 
 .projectText {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem;
+    padding: 0.5rem;
     position: relative;
     width: 100%;
 }
 
 .projectText h4 {
     line-height: 1.5rem;
-margin-top: 2rem;
-font-weight: 900;
-  max-width: 600px;
+    margin-top: 2rem;
+    font-weight: 900;
+    max-width: 600px;
 }
 
 .projectText p {
@@ -93,14 +101,17 @@ font-weight: 900;
     margin: 2rem;
 }
 
-.skillWrapper, .topSkill, .bottomSkill {
+.skillWrapper,
+.topSkill,
+.bottomSkill {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
 }
 
-.topSkill ul, .bottomSkill ul {
+.topSkill ul,
+.bottomSkill ul {
     width: 13vw;
 }
 
@@ -111,11 +122,16 @@ font-weight: 900;
     gap: 20px;
 }
 
-#intro, #projects, #contact {
+#intro,
+#projects,
+#contact {
     background-color: rgb(53, 77, 54);
 }
-#about, #skills{
+#about,
+#skills,
+.contactWrapper {
     background-color: rgb(71, 104, 72);
+    
 }
 
 li {
@@ -123,6 +139,30 @@ li {
     flex-direction: row-reverse;
     justify-content: flex-end;
     gap: 1vw;
+}
+
+.contactLogo {
+        width: 7vh;
+    height: 7vh;
+}
+
+#intro,
+#about,
+#contact,
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid rgb(71, 104, 72);
+    border-radius: 0.75rem;
+    gap: 3vh;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -148,11 +188,19 @@ li {
     width: 3vh;
 }
 
-#intro, #about, #projects, #skills, #contact {
+#intro,
+#about,
+#projects,
+#skills,
+#contact {
     min-height: 90vh;
 }
 
 #intro h2 {
     height: 30vh;
     width: 40vw;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
 }

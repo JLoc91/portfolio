@@ -9,11 +9,18 @@ function Header() {
     return (
         <header className="app-header">
             <Profile />
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-
+            <a href="#about">
+                <h3>About Me</h3>
+            </a>
+            <a href="#projects">
+                <h3>Projects</h3>
+            </a>
+            <a href="#skills">
+                <h3>Skills</h3>
+            </a>
+            <a href="#contact">
+                <h3>Contact</h3>
+            </a>
         </header>
     );
 }

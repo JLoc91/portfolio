@@ -2,10 +2,10 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+import "animate.css";
 
 export function Projects() {
     const { ref, inView } = useInView({ threshold: 0.2 });
-
     const animation = useAnimation();
 
     useEffect(() => {
@@ -46,7 +46,7 @@ export function Projects() {
                 }}
                 className="welcomeText"
             >
-                Here you can find some of the projects I developed
+                Here you can find some of the projects I created
             </motion.h2>
             <motion.div
                 animate={animation}
@@ -56,7 +56,8 @@ export function Projects() {
                 <motion.div
                     animate={animation}
                     ref={ref}
-                    className="projectBox"
+                    // className="projectBox animate__animated animate__bounce animate__delay-2s"
+                    className="projectBox shadow"
                 >
                     <a
                         href="https://github.com/JLoc91/travel-football-app"
@@ -97,7 +98,7 @@ export function Projects() {
                 <motion.div
                     animate={animation}
                     ref={ref}
-                    className="projectBox"
+                    className="projectBox shadow"
                 >
                     <a
                         href="https://github.com/JLoc91/social-network"
@@ -140,7 +141,7 @@ export function Projects() {
                 <motion.div
                     animate={animation}
                     ref={ref}
-                    className="projectBox"
+                    className="projectBox shadow"
                 >
                     <a
                         href="https://github.com/JLoc91/imageboard"
@@ -183,7 +184,7 @@ export function Projects() {
                 <motion.div
                     animate={animation}
                     ref={ref}
-                    className="projectBox"
+                    className="projectBox shadow"
                 >
                     <a
                         href="https://github.com/JLoc91/petition"

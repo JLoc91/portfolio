@@ -11,7 +11,6 @@ export function Skills() {
             animation.start({
                 opacity: 1,
                 transition: {
-                    // delay: 0.1,
                     duration: 0.5,
                 },
             });
@@ -25,12 +24,7 @@ export function Skills() {
 
     return (
         <motion.div id="skills" ref={ref}>
-        {/* <motion.div id="skills" ref={ref} animate={animation}> */}
         
-            {/* <div className="placeHolder"> */}
-            <div>
-                <h1>Skills</h1>{" "}
-            </div>
             <motion.div animate={animation} ref={ref} className="skillWrapper">
                 <h3 className="skillTitle">Skills</h3>
                 <div className="skillBox">
