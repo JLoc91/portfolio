@@ -90,13 +90,139 @@ export function Projects() {
                             <span>
                                 <strong>Stack:</strong>
                             </span>{" "}
-                            JavaScript, React.js, Node.js, 3rd-Party APIs
+                            JavaScript | React.js | Node.js | 3rd-Party APIs
                         </p>
                     </motion.div>
                 </motion.div>
-                
-                
-                
+                <motion.div
+                    animate={animation}
+                    ref={ref}
+                    className="projectBox"
+                >
+                    <a
+                        href="https://github.com/JLoc91/social-network"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.div
+                            animate={animation}
+                            ref={ref}
+                            className="projectImage"
+                        >
+                            <img
+                                className="projectGif"
+                                src="./projects/social-network.gif"
+                                alt="social-network GIF"
+                            />
+                        </motion.div>
+                    </a>
+                    <motion.div
+                        animate={animation}
+                        ref={ref}
+                        className="projectText"
+                    >
+                        <h4>Social-Network</h4>
+                        <p className="projectDescription">
+                            A single page application social-network made with
+                            React with the functionalities of registrating,
+                            reseting the password, login, creating a profile,
+                            chatting (socket.io), adding and removing friends.
+                        </p>
+                        <p className="projectStack">
+                            <span>
+                                <strong>Stack:</strong>
+                            </span>{" "}
+                            React | Redux | Express | Socket.io | Node |
+                            PostgreSQL
+                        </p>
+                    </motion.div>
+                </motion.div>
+                <motion.div
+                    animate={animation}
+                    ref={ref}
+                    className="projectBox"
+                >
+                    <a
+                        href="https://github.com/JLoc91/imageboard"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.div
+                            animate={animation}
+                            ref={ref}
+                            className="projectImage"
+                        >
+                            <img
+                                className="projectGif"
+                                src="./projects/imageboard.gif"
+                                alt="imageboard GIF"
+                            />
+                        </motion.div>
+                    </a>
+                    <motion.div
+                        animate={animation}
+                        ref={ref}
+                        className="projectText"
+                    >
+                        <h4>Imageboard</h4>
+                        <p className="projectDescription">
+                            A single page application made with Vue.js which
+                            allows users to upload a picture to an AWS bucket
+                            and insert it into the page. Users can comment on
+                            the specific pictures and can delete them. So far no
+                            registration or login functionality is implemented.
+                        </p>
+                        <p className="projectStack">
+                            <span>
+                                <strong>Stack:</strong>
+                            </span>{" "}
+                            Vue.js | Express | Node | PostgreSQL
+                        </p>
+                    </motion.div>
+                </motion.div>
+                <motion.div
+                    animate={animation}
+                    ref={ref}
+                    className="projectBox"
+                >
+                    <a
+                        href="https://github.com/JLoc91/petition"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <motion.div
+                            animate={animation}
+                            ref={ref}
+                            className="projectImage"
+                        >
+                            <img
+                                className="projectGif"
+                                src="./projects/petition.gif"
+                                alt="petition GIF"
+                            />
+                        </motion.div>
+                    </a>
+                    <motion.div
+                        animate={animation}
+                        ref={ref}
+                        className="projectText"
+                    >
+                        <h4>Petition</h4>
+                        <p className="projectDescription">
+                            A Web-Application which allows the user to register
+                            and login, to sign a petition and see which other
+                            people have signed the petition so far. Furthermore
+                            the user is able to delete his/her signature and
+                            delete his/her account.
+                        </p>
+                        <p className="projectStack">
+                            <span>
+                                <strong>Stack:</strong>
+                            </span>{" "}
+                            Express | Express-Handlebars | Node | PostgreSQL
+                        </p>
+                    </motion.div>
+                </motion.div>
             </motion.div>
         </div>
     );
