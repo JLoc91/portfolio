@@ -47,7 +47,7 @@ export function Welcome() {
                 }}
                 className="welcomeText"
             >
-                My name is <span className="thick__text">Julien</span>, and I am a Junior Full Stack
+                My name is <span className="thick__text">Julien</span> and I am a Junior Full Stack
                 Developer from Berlin, who is focused on building &
                 developing clean front and backend code
               

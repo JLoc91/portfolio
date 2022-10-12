@@ -27,22 +27,22 @@ export function About() {
 
     return (
         <div id="about" className="sectionBox">
-            <motion.div animate={animation} ref={ref} className="wrapper">
-                <h3 className="about__title">Background</h3>
+            <motion.div animate={animation} ref={ref} className="aboutWrapper">
+                <h2 className="about__title">Background</h2>
 
-                <p>
+                <h3>
                     I am{" "}
-                    <span className="thickText">
+                    <span className="thick__text">
                         Junior Full Stack Developer
                     </span>
-                    {""}with an engineering and sales background. After working
+                    {" "}with an engineering and sales background. After working
                     in the additive manufacturing (3D-printing) industry, I
                     decided to deepen my programming skills from my studies in a
                     12-week full-stack web development bootcamp at SPICED
                     Academy. There I developed a passion for JavaScript, Node.js
                     and React in particular, but am always interested in
                     learning new technologies.
-                </p>
+                </h3>
             </motion.div>
         </div>
     );

@@ -35,7 +35,7 @@ export function Contact() {
                     <a href="mailto:jfaist.dev@googlemail.com">
                         <h3>Send Email</h3>
                     </a>
-                    <div>
+                    <div className="logoContainer">
                         <a
                             href="https://linkedin.com/in/julien-faist"
                             target="_blank"
