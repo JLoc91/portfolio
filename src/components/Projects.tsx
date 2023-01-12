@@ -87,7 +87,7 @@ export function Projects() {
                             matches and see the weather forecast and hotels near
                             the venue.
                         </p>
-                        <a href="https://travel-football-app.herokuapp.com/">
+                        <a href="https://travel-football-app.onrender.com/">
                             Check the deployed version here!
                         </a>
                         <p className="projectStack">
@@ -219,9 +219,9 @@ export function Projects() {
                             the user is able to delete his/her signature and
                             delete his/her account.
                         </p>
-                        <a href="https://moped-freedom.herokuapp.com/">
+                        {/* <a href="https://moped-freedom.herokuapp.com/">
                             Check the deployed version here!
-                        </a>
+                        </a> */}
                         <p className="projectStack">
                             <span>
                                 <strong>Stack:</strong>
